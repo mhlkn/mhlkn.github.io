@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+button{
+
+background:pink;
+
+}
+ @media screen and (orientation:landscape) {
+    .intro {
+        max-height: 100vh;
+        overflow: hidden;
+        position: relative;
+
+        background: url("https://top-fon.com/uploads/posts/2021-07/1626836116_75-p-kartinki-krasnii-fon-s-serdechkami-76.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+    .intro:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, .3);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .intro__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .intro__title {
+        margin: 0;
+
+        font-size: 45px;
+        color: #fff;
+        text-align: center;
+    }
+    #data {
+        opacity: 0;
+        display: block;
+
+        margin: 0;
+
+        font-size: 45px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .container button {
+        border-radius:50%;
+        
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+    }
+    .container button img{
+        border-radius:50%;
+        width:256px;
+        height:256px;
+
+    }
+
+    .video {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 56.25%;
+    }
+
+    .video__media {
+        width: 100%;
+        height: auto;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .intro_text {
+
+        margin: 0;
+
+        font-size: 25px;
+        color: #fff;
+        text-align: center;
+
+    }
+}
+ 
+@media screen and (orientation:portrait) {
+
+/* счас как накостылю под мобилу :))*/
+    /*body {
+
+    }*/
+    .video{
+        display:none;
+    }
+
+    .intro {
+        height:100%;
+        overflow: hidden;
+
+    }
+
+
+    .intro__content {
+        width: 100%;
+        height: 100%;
+
+        background:url("https://mobimg.b-cdn.net/v3/fetch/79/797d1e4d36f113207e234c78fdfffa3e.jpeg?h=600&r=0.5") center no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .intro__title {
+        margin: 0;
+
+        font-size: 45px;
+        color: #4c4c4c;
+        text-align: center;
+    }
+
+    #data {
+        opacity: 0;
+        display: block;
+        margin: 0;
+        font-size: 45px;
+        color: #fff;
+        text-align: center;
+        }
+   
+
+.intro_text {
+
+    margin: 0;
+
+    font-size: 25px;
+    color: #5c5c5c;
+    text-align: center;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container button {
+    border-radius:50%;
+    margin-top:25%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+}
+.container button img{
+    border-radius:50%;
+    width:256px;
+    height:256px;
+
+}
+
+}
